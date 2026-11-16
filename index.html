@@ -9,3 +9,338 @@
   <p>Тут буде мій світ.</p>
 </body>
 </html>
+<!DOCTYPE html>
+
+<html lang="uk">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Music Universe — річний проєкт, присвячений музиці, виконавцям та музичним відкриттям.">
+
+    <title>Music Universe — музичний всесвіт</title>
+
+    <style>
+
+        :root {
+
+            --dark: #20242C;
+
+            --light: #F5F1E8;
+
+        }
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            background: var(--dark);
+
+            color: var(--light);
+
+            min-height: 100vh;
+
+            padding: 40px 20px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+        }
+
+        .container {
+
+            width: 100%;
+
+            max-width: 1050px;
+
+        }
+
+        header {
+
+            margin-bottom: 55px;
+
+        }
+
+        .label {
+
+            font-size: 13px;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 22px;
+
+        }
+
+        h1 {
+
+            font-size: clamp(42px, 8vw, 76px);
+
+            line-height: 1.05;
+
+            margin-bottom: 22px;
+
+            letter-spacing: -3px;
+
+        }
+
+        h1 span {
+
+            color: var(--light);
+
+        }
+
+        .description {
+
+            max-width: 680px;
+
+            font-size: 17px;
+
+            line-height: 1.8;
+
+        }
+
+        .section-title {
+
+            font-size: 13px;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 20px;
+
+        }
+
+        .cards {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 16px;
+
+        }
+
+        .card {
+
+            background: var(--light);
+
+            color: var(--dark);
+
+            padding: 30px;
+
+            min-height: 190px;
+
+            border-radius: 4px;
+
+            transition: transform 0.25s ease;
+
+        }
+
+        .card:hover {
+
+            transform: translateY(-5px);
+
+        }
+
+        .card-number {
+
+            font-size: 13px;
+
+            margin-bottom: 25px;
+
+        }
+
+        .card h2 {
+
+            font-size: 25px;
+
+            margin-bottom: 12px;
+
+        }
+
+        .card p {
+
+            font-size: 15px;
+
+            line-height: 1.6;
+
+        }
+
+        footer {
+
+            margin-top: 45px;
+
+            font-size: 13px;
+
+            text-align: center;
+
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+
+                padding: 35px 18px;
+
+            }
+
+            header {
+
+                margin-bottom: 40px;
+
+            }
+
+            .cards {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .card {
+
+                min-height: 160px;
+
+            }
+
+            h1 {
+
+                letter-spacing: -2px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+
+            <p class="label">Річний проєкт · Музика</p>
+
+            <h1>Music <span>Universe</span></h1>
+
+            <p class="description">
+
+                Music Universe — проєкт, присвячений світу музики,
+
+                її жанрам, виконавцям та композиціям. Його мета —
+
+                об'єднати різні способи взаємодії з музикою в одному
+
+                цифровому просторі. Проєкт складатиметься з чотирьох
+
+                частин: гри, Telegram-бота, сайту та застосунку.
+
+            </p>
+
+        </header>
+
+        <section>
+
+            <h2 class="section-title">Частини проєкту</h2>
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <p class="card-number">01 / GAME</p>
+
+                    <h2>Гра</h2>
+
+                    <p>
+
+                        Музична вікторина, у якій потрібно вгадувати
+
+                        виконавців, альбоми та композиції за підказками.
+
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <p class="card-number">02 / BOT</p>
+
+                    <h2>Бот</h2>
+
+                    <p>
+
+                        Telegram-бот для пошуку музики та рекомендацій
+
+                        композицій відповідно до настрою й жанрів.
+
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <p class="card-number">03 / WEBSITE</p>
+
+                    <h2>Сайт</h2>
+
+                    <p>
+
+                        Музична енциклопедія з каталогом реальних
+
+                        виконавців, гуртів, альбомів і композицій.
+
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <p class="card-number">04 / APP</p>
+
+                    <h2>Застосунок</h2>
+
+                    <p>
+
+                        Особистий музичний щоденник для збереження
+
+                        улюблених композицій, оцінок та власних добірок.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            MUSIC UNIVERSE · МУЗИКА БЕЗ МЕЖ
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
